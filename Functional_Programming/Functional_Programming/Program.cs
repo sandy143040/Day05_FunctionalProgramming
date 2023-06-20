@@ -15,6 +15,7 @@ namespace Functional_Programming
             Console.WriteLine("1.FlipCoin");
             Console.WriteLine("2.Leap Year");
             Console.WriteLine("3.PowerOfTwo Table");
+            Console.WriteLine("4.Harmonic Number");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -50,6 +51,13 @@ namespace Functional_Programming
                         return;
                     }
                     PowerOfTwo.PrintPowersOfTwo(N);
+                    break;
+                case 4:
+                    Console.WriteLine("Please Enter Value:");
+                    int input = Convert.ToInt32(Console.ReadLine());
+                    // harmonic = new Harmonic();
+                   // Harmonic.nthHarmonic(input);
+                    Console.Write(Harmonic.nthHarmonic(input));
                     break;
                 default:
                     Console.WriteLine("please choose program with given option");
