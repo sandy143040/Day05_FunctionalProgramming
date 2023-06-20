@@ -13,6 +13,7 @@ namespace Functional_Programming
             Console.WriteLine("Welcome to Functional programming problem");
             Console.WriteLine("Please choose 1program from below option");
             Console.WriteLine("1.FlipCoin");
+            Console.WriteLine("2.Leap Year");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -30,6 +31,12 @@ namespace Functional_Programming
                     CoinFlip coinFlip = new CoinFlip();
                     coinFlip.PerformFlips(numberOfFlips);
                     coinFlip.DisplayResults();
+                    break;
+                case 2:
+                    Console.WriteLine("Enter a year: ");
+                    int year = Convert.ToInt32(Console.ReadLine());
+                    LeapYear leapYear = new LeapYear();
+                    leapYear.CheckYear(year);
                     break;
                 default:
                     Console.WriteLine("please choose program with given option");
