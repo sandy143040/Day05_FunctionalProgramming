@@ -14,6 +14,7 @@ namespace Functional_Programming
             Console.WriteLine("Please choose 1program from below option");
             Console.WriteLine("1.FlipCoin");
             Console.WriteLine("2.Leap Year");
+            Console.WriteLine("3.PowerOfTwo Table");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -37,6 +38,18 @@ namespace Functional_Programming
                     int year = Convert.ToInt32(Console.ReadLine());
                     LeapYear leapYear = new LeapYear();
                     leapYear.CheckYear(year);
+                    break;
+                case 3:
+                    Console.Write("Enter the power value (N): ");
+                    int N = Convert.ToInt32(Console.ReadLine());
+
+                    // Check if N is within the valid range
+                    if (N < 0 || N >= 31)
+                    {
+                        Console.WriteLine("Invalid input! N should be between 0 and 30.");
+                        return;
+                    }
+                    PowerOfTwo.PrintPowersOfTwo(N);
                     break;
                 default:
                     Console.WriteLine("please choose program with given option");
