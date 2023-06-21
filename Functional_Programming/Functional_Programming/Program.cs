@@ -20,6 +20,7 @@ namespace Functional_Programming
                 Console.WriteLine("3.PowerOfTwo Table");
                 Console.WriteLine("4.Harmonic Number");
                 Console.WriteLine("5.Prime Factors");
+                Console.WriteLine("6.QuotientAndRemainder");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -66,6 +67,14 @@ namespace Functional_Programming
                         Console.Write("Enter a number to find its prime factors: ");
                         int n = Convert.ToInt32(Console.ReadLine());
                         PrimeFactors.Factors(n);
+                        break;
+                    case 6:
+                        Console.WriteLine("Enter dividend: ");
+                        int dividend = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter divisor: ");
+                        int divisor = Convert.ToInt32(Console.ReadLine());
+                        QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                        quotientAndRemainder.Calculation(dividend,divisor);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
