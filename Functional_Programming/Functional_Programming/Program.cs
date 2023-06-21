@@ -22,6 +22,7 @@ namespace Functional_Programming
                 Console.WriteLine("5.Prime Factors");
                 Console.WriteLine("6.QuotientAndRemainder");
                 Console.WriteLine("7.Swaping Numbers");
+                Console.WriteLine("8.Even or Odd");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -83,6 +84,11 @@ namespace Functional_Programming
                         Console.WriteLine("Enter Second number");
                         int b = Convert.ToInt32(Console.ReadLine());
                         Swaping.Swap(a,b);
+                        break;
+                    case 8:
+                        Console.WriteLine("Please Enter a Number");
+                        EvenOrOdd evenOrOdd = new EvenOrOdd();
+                        evenOrOdd.CheckEvenOdd();
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
