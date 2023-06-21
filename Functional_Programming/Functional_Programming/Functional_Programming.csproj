@@ -47,6 +47,7 @@
     <Compile Include="Harmonic.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="PowerOfTwo.cs" />
+    <Compile Include="PrimeFactors.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -19,6 +19,7 @@ namespace Functional_Programming
                 Console.WriteLine("2.Leap Year");
                 Console.WriteLine("3.PowerOfTwo Table");
                 Console.WriteLine("4.Harmonic Number");
+                Console.WriteLine("5.Prime Factors");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -60,6 +61,11 @@ namespace Functional_Programming
                         Console.WriteLine("Please Enter Value:");
                         int input = Convert.ToInt32(Console.ReadLine());
                         Console.Write(Harmonic.nthHarmonic(input));
+                        break;
+                    case 5:
+                        Console.Write("Enter a number to find its prime factors: ");
+                        int n = Convert.ToInt32(Console.ReadLine());
+                        PrimeFactors.Factors(n);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
