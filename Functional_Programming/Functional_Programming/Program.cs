@@ -21,6 +21,7 @@ namespace Functional_Programming
                 Console.WriteLine("4.Harmonic Number");
                 Console.WriteLine("5.Prime Factors");
                 Console.WriteLine("6.QuotientAndRemainder");
+                Console.WriteLine("7.Swaping Numbers");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -75,6 +76,13 @@ namespace Functional_Programming
                         int divisor = Convert.ToInt32(Console.ReadLine());
                         QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
                         quotientAndRemainder.Calculation(dividend,divisor);
+                        break;
+                    case 7:
+                        Console.WriteLine("Enter First number");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter Second number");
+                        int b = Convert.ToInt32(Console.ReadLine());
+                        Swaping.Swap(a,b);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
