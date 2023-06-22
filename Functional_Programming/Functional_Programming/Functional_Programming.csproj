@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alphabet.cs" />
     <Compile Include="CoinFlip.cs" />
     <Compile Include="EvenOrOdd.cs" />
     <Compile Include="Harmonic.cs" />

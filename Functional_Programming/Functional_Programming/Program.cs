@@ -23,6 +23,7 @@ namespace Functional_Programming
                 Console.WriteLine("6.QuotientAndRemainder");
                 Console.WriteLine("7.Swaping Numbers");
                 Console.WriteLine("8.Even or Odd");
+                Console.WriteLine("9.Vowel or Consonent");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -89,6 +90,12 @@ namespace Functional_Programming
                         Console.WriteLine("Please Enter a Number");
                         EvenOrOdd evenOrOdd = new EvenOrOdd();
                         evenOrOdd.CheckEvenOdd();
+                        break;
+                    case 9:
+                        Console.WriteLine("Please Enter a Character");
+                        char ch = Convert.ToChar(Console.ReadLine());
+                        Alphabet alphabet = new Alphabet();
+                        alphabet.Vowel(ch);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
