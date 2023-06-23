@@ -24,6 +24,7 @@ namespace Functional_Programming
                 Console.WriteLine("7.Swaping Numbers");
                 Console.WriteLine("8.Even or Odd");
                 Console.WriteLine("9.Vowel or Consonent");
+                Console.WriteLine("10.Largest Among_3 Num");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -96,6 +97,15 @@ namespace Functional_Programming
                         char ch = Convert.ToChar(Console.ReadLine());
                         Alphabet alphabet = new Alphabet();
                         alphabet.Vowel(ch);
+                        break;
+                    case 10:
+                        Console.WriteLine("Enter three numbers:");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        int num2 = Convert.ToInt32(Console.ReadLine());
+                        int num3 = Convert.ToInt32(Console.ReadLine());
+
+                        int largest = LargestAmongThree.GetLargest(num1, num2, num3);
+                        Console.WriteLine("The largest number is {0}", largest);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");

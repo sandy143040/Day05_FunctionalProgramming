@@ -47,6 +47,7 @@
     <Compile Include="CoinFlip.cs" />
     <Compile Include="EvenOrOdd.cs" />
     <Compile Include="Harmonic.cs" />
+    <Compile Include="LargestAmongThree.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="PowerOfTwo.cs" />
     <Compile Include="PrimeFactors.cs" />
